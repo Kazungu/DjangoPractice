@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+	<h1>Wash your hands</h1>
+	<p>Wash your hands with soap and water for atleast 20 seconds. </p>
+
+	<ul>
+		{% for sub_item in my_list%}
+			<li>{{forloop.counter}} - {{sub_item}}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
